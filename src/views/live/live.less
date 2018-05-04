@@ -1,0 +1,160 @@
+.l-main{
+	display: flex;
+}
+.l-video{
+	position: relative;
+}
+.course-video{
+	position: relative;
+	padding: 10px 50px;
+	flex: 1;
+}
+.l-left{
+    background:#2C2C2C;
+	position: relative;
+	flex: 0 0 20%;
+	transition: margin .5s;
+	-webkit-transition: margin .5s;
+	.left-btn {
+		position: relative;
+		top: 50%;
+		left: 100%;
+		z-index: 10;
+		overflow: hidden;
+		cursor: pointer;
+		width: 15px;
+		height: 150px;
+		margin-top: -50px;
+		display: block;
+		span {
+			width: 15px;
+			height: 150px;
+			position: absolute;
+			top: 0;
+			left: -1px;
+			display: block;
+			background: url("../../assets/video/side-left-shrink.png") no-repeat;
+		}
+	}
+}
+
+.l_left_span_c{
+	background-position: 0 -151px!important;
+}
+.l_left_span_c:hover{
+	background-position: -22px -151px!important;
+}
+.l-left{
+	.left-btn{
+		span:hover {
+			background-position: -22px 0;
+		}
+	}
+}
+.l-right{
+	position: relative;
+	background: #fff;
+	border:1px solid #000;
+	margin:10px 10px 10px 0;
+	flex: 0 0 25%;
+
+}
+.l-text{
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+.btn-enter{
+	margin-top: -20px !important;
+}
+
+.l-chatbox{
+	z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.mine-custom-info{
+    display: flex;
+	background: #fff;
+}
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+	width: 100%;
+	img{
+		vertical-align: middle;
+	}
+}
+.l-info{
+    flex: 1;
+    margin-left: 10px;
+    line-height: 1;
+	overflow: hidden;
+	// border: 1px solid #3d3d3d;
+	padding: 1px 10px;
+	p{
+		line-height: 1.2;
+		text-align: left;
+		margin-bottom: 5px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		color: royalblue;
+	}
+}
+.info-q{
+	text-align: left;
+	span{
+		font-size: 14px;
+		color: #888;
+	}
+}
+.right{
+ margin-top: 10px;
+}
+
+.teacher-left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+	width: 100%;
+	img{
+		vertical-align: middle;
+	}
+}
+.l-teacher-info{
+    margin-left: 10px;
+	height: 80px;
+	padding: 1px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	p{
+		font-size: 17px;
+		line-height: 1.2;
+		text-align: left;
+		margin-bottom: 5px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		color: #3d3d3d;
+	}
+}
+.info-teacher-q{
+	text-align: left;
+	span{
+		font-size: 14px;
+		color: #888;
+	}
+}
